@@ -14,7 +14,6 @@ export function RelatedProducts() {
       .then((result) => setProducts(result.products));
   }, []);
 
-  console.log(products);
   return (
     <div className='related-container'>
       <div className='related-top'>
