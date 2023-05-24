@@ -17,7 +17,6 @@ export function ProductsCarousel({ products }) {
   };
 
   const nextSlide = () => {
-    console.log(activeIndex, products.length);
     if (activeIndex === products.length - 4 || activeIndex > products.length - 4) {
       setActiveIndex(0);
       setTranslate(0);
@@ -30,7 +29,6 @@ export function ProductsCarousel({ products }) {
 
   const prevSlide = () => {
     if (activeIndex >= products.length) {
-      console.log(">= 0", activeIndex, products.length - 4);
       setActiveIndex(0);
       setTranslate(0);
       return;
@@ -39,7 +37,6 @@ export function ProductsCarousel({ products }) {
     if (activeIndex === 0) {
       setActiveIndex(products.length - 4);
       setTranslate((products.length - 4) * getWidth());
-      console.log("= 0", activeIndex, products.length);
       return;
     }
 
