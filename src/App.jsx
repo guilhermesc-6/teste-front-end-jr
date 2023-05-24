@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Hero />
       <Categories />
-      <RelatedProducts />
+      <RelatedProducts showFilter={true} />
       <div className='banner-container'>
         <Banner>
           <p>Parceiros</p>
@@ -27,6 +27,7 @@ function App() {
           <Button>Confira</Button>
         </Banner>
       </div>
+      <RelatedProducts />
     </>
   );
 }

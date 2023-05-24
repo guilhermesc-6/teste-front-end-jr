@@ -69,6 +69,18 @@
     }
   }
 
+  .related-short-filter {
+    margin: 0 0 32px 0;
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      color: #3f3f40;
+    }
+  }
+
   .related-carousel {
     width: 100%;
   }
