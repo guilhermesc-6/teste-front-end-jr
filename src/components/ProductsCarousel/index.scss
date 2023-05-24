@@ -1,0 +1,46 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .arrow {
+    z-index: 10;
+    width: 85px;
+    height: 500px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  .arrow-left {
+    position: absolute;
+    left: 26px;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: 26px;
+  }
+
+  .slider {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 10px 0 0 30px;
+    overflow-x: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+}
