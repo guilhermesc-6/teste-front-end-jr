@@ -1,11 +1,9 @@
 import "./index.scss";
 
-import partner from "../../assets/vitrini-1.png";
-
-export function Banner({ children }) {
+export function Banner({ banner, children }) {
   return (
     <div className='banner'>
-      <img src={partner} alt='Parceiros' />
+      <img src={banner} alt={children[0].props.children} />
       <div className='banner-overlay' />
       <div className='banner-infos'>{children}</div>
     </div>

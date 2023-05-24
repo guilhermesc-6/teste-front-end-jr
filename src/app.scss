@@ -5,4 +5,21 @@
   align-items: center;
   justify-content: center;
   gap: 105px;
+
+  &.products-banner {
+    .banner {
+      height: 284px;
+      overflow: hidden;
+
+      .banner-overlay {
+        height: 275px;
+        left: 0;
+        top: 0;
+      }
+
+      .banner-infos {
+        top: 40px;
+      }
+    }
+  }
 }
