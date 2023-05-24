@@ -1,10 +1,10 @@
 header {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 6px 56px 11px;
+  padding: 6px 56px 0;
   font-size: 12px;
 
-  .infos {
+  .header-infos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ header {
     }
   }
 
-  .main-menu {
+  .header-main-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ header {
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 
-    .search {
+    .header-search {
       width: 657px;
       height: 48px;
       position: relative;
@@ -57,14 +57,18 @@ header {
         }
       }
 
-      a {
+      button {
         position: absolute;
         top: 10px;
         right: 10px;
+
+        cursor: pointer;
+        border: none;
+        background: transparent;
       }
     }
 
-    .menu_icons {
+    .header-menu-icons {
       display: flex;
       align-items: center;
       justify-content: center;

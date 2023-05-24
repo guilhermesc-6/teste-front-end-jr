@@ -13,7 +13,7 @@ import "./index.scss";
 export function Header() {
   return (
     <header>
-      <div className='infos'>
+      <div className='header-infos'>
         <div>
           <img src={shieldCheck} alt='' />
           Compra<span>100% segura</span>
@@ -28,21 +28,21 @@ export function Header() {
         </div>
       </div>
 
-      <div className='main-menu'>
+      <div className='header-main-menu'>
         <div className='logo'>
           <a href='#'>
             <img src={logo} alt='logo' />
           </a>
         </div>
 
-        <div className='search'>
+        <div className='header-search'>
           <input type='text' placeholder='O que você está buscando?' />
-          <a href='#'>
+          <button type='button'>
             <img src={magnifyingGlass} />
-          </a>
+          </button>
         </div>
 
-        <div className='menu_icons'>
+        <div className='header-menu-icons'>
           <a href='#'>
             <img src={inbox} />
           </a>
