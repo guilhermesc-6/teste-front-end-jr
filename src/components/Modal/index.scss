@@ -1,0 +1,69 @@
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.54);
+  z-index: 99;
+}
+
+.modal-container {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 769px;
+  height: 299.26px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+
+  h4 {
+    font-weight: 400;
+
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041e50;
+  }
+
+  .modal-price {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041e50;
+  }
+
+  .modal-description {
+    width: 290px;
+    font-size: 10px;
+    line-height: 150.5%;
+    letter-spacing: 0.05em;
+    color: #222222;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #041e50;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+  }
+}

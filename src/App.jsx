@@ -11,6 +11,7 @@ import partner from "./assets/vitrini-1.png";
 import product from "./assets/vitrini-2.png";
 
 import "./app.scss";
+import { Modal } from "./components/Modal";
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
       <Brands />
       <RelatedProducts />
       <Footer />
+
+      <Modal />
     </>
   );
 }
