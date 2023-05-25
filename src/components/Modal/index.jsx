@@ -1,29 +1,32 @@
+import { useContext } from "react";
+import { formatCurrency } from "../../utils/formatCurrency";
 import closeBtn from "../../assets/close.svg";
 
 import "./index.scss";
+import { ModalContext } from "../../contexts/modalContext";
 
 export function Modal() {
+  const { isModalOpen, setIsModalOpen, selectedProduct } = useContext(ModalContext);
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <>
+    <div className={`modal ${!isModalOpen ? "modal-hide" : ""}`}>
       <div className='modal-overlay'></div>
       <div className='modal-container'>
-        <span className='modal-close'>
+        <span className='modal-close' onClick={handleModalClose}>
           <img src={closeBtn} alt='close' />
         </span>
-        <img
-          src='https://app.econverse.com.br/teste-front-end/junior/tecnologia/fotos-produtos/foto-iphone.png'
-          alt=''
-        />
+        <img src={selectedProduct.image} alt='' />
         <div className='modal-infos'>
-          <h4>LOREM IPSUM DOLOR SIT AMET</h4>
-          <span className='modal-price'>R$ 1.499,90</span>
-          <p className='modal-description'>
-            Many desktop publishing packages and web page editors now many desktop
-            publishing
-          </p>
+          <h4>{selectedProduct.name}</h4>
+          <span className='modal-price'>{formatCurrency(selectedProduct.price)}</span>
+          <p className='modal-description'>{selectedProduct.description}</p>
           <a href='#'>Veja mais detalhes do produto {">"}</a>
         </div>
       </div>
-    </>
+    </div>
   );
 }

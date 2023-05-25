@@ -1,5 +1,5 @@
 import "./index.scss";
 
-export function Button({ children }) {
-  return <button>{children}</button>;
+export function Button({ onClick = null, children }) {
+  return <button onClick={onClick}>{children}</button>;
 }
