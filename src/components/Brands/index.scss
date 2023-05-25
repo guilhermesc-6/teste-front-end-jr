@@ -1,0 +1,46 @@
+.brands-container {
+  max-width: 1250px;
+  margin: 150px auto 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #f71963;
+  }
+
+  .brands-slider {
+    width: 100%;
+    margin: 40px 0 0 0;
+    padding: 15px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+    scroll-behavior: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: auto;
+    cursor: pointer;
+  }
+
+  .brands-arrow {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    right: 52px;
+    bottom: 90px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

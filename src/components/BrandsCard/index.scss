@@ -1,0 +1,15 @@
+.brands-card-container {
+  width: 211px;
+  height: 211px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+
+  img {
+    width: 172px;
+  }
+}

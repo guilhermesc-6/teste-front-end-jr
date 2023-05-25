@@ -4,6 +4,7 @@ import { Categories } from "./components/Categories";
 import { RelatedProducts } from "./components/RelatedProducts";
 import { Banner } from "./components/Banner";
 import { Button } from "./components/Button";
+import { Brands } from "./components/Brands";
 
 import partner from "./assets/vitrini-1.png";
 import product from "./assets/vitrini-2.png";
@@ -44,6 +45,7 @@ function App() {
           <Button>Confira</Button>
         </Banner>
       </div>
+      <Brands />
     </>
   );
 }
