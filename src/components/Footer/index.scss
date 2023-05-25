@@ -1,0 +1,78 @@
+.footer-container {
+  width: 100%;
+  margin: 170px 0 0 0;
+  background: #2a2a2a;
+
+  .footer-menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 93px;
+
+    h4 {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      color: #ffffff;
+      padding: 0;
+    }
+
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 32px;
+          text-transform: uppercase;
+          color: #ffffff;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .footer-about {
+      display: flex;
+      align-items: self-start;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 224px;
+
+      h4 {
+        margin: 0;
+      }
+
+      .footer-about-socials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-payments {
+      margin: 0 240px 0 0;
+
+      h4 {
+        margin: 0;
+      }
+
+      .payment-brands {
+        margin: 24px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+    }
+  }
+}

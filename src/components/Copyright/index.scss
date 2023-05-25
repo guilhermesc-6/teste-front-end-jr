@@ -1,0 +1,24 @@
+.copyright-container {
+  border-top: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 90px;
+
+  .copyright-info {
+    width: 696px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .copyright-logos {
+    width: 226px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+}

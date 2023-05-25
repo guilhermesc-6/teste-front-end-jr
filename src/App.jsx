@@ -1,10 +1,11 @@
-import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { Categories } from "./components/Categories";
-import { RelatedProducts } from "./components/RelatedProducts";
+import { Header } from "./components/Header";
 import { Banner } from "./components/Banner";
 import { Button } from "./components/Button";
 import { Brands } from "./components/Brands";
+import { Footer } from "./components/Footer";
+import { Categories } from "./components/Categories";
+import { RelatedProducts } from "./components/RelatedProducts";
 
 import partner from "./assets/vitrini-1.png";
 import product from "./assets/vitrini-2.png";
@@ -46,6 +47,8 @@ function App() {
         </Banner>
       </div>
       <Brands />
+      <RelatedProducts />
+      <Footer />
     </>
   );
 }

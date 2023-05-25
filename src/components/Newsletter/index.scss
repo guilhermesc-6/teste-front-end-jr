@@ -1,0 +1,73 @@
+.newsletter-container {
+  width: 360px;
+  height: 260px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #3f3f40;
+
+    span {
+      font-weight: 700;
+      font-size: 21px;
+      display: block;
+      text-align: start;
+    }
+  }
+
+  span {
+    width: 310px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #3f3f40;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 9px;
+    margin: 15px 0 0 0;
+
+    input {
+      background: #ffffff;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      padding: 13px 25px;
+      outline: none;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: start;
+        text-transform: uppercase;
+        color: #c0c0c0;
+      }
+    }
+
+    button {
+      width: 62px;
+      height: 45px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+}
